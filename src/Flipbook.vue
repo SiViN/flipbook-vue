@@ -69,7 +69,7 @@
             @load="didLoadImage($event)"
           />
 
-          <div :style="{ opacity: flip.opacity }">
+          <div :style="{ opacity: flip.opacity, top: yMarginNegative + 'px' }" class="page-wrapper">
             <div
               v-for="[
                 key,
@@ -281,6 +281,7 @@ export default
     pageHeight: -> Math.round(@imageHeight * @pageScale)
     xMargin: -> (@viewWidth - @pageWidth * @displayedPages) / 2
     yMargin: -> (@viewHeight - @pageHeight) / 2
+    yMarginNegative: -> -1 * ((@viewHeight - @pageHeight) / 2)
     polygonWidth: ->
       w = @pageWidth / @nPolygons
       w = Math.ceil(w + 1 / @zoom)
@@ -953,5 +954,9 @@ export default
 .polygon .lighting {
   width: 100%;
   height: 100%;
+}
+
+.page-wrapper {
+  position: relative;
 }
 </style>

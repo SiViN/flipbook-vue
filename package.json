@@ -1,6 +1,6 @@
 {
   "name": "flipbook-vue",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "3D page flip effect for Vue.js",
   "homepage": "https://ts1.github.io/flipbook-vue/",
@@ -50,13 +50,10 @@
     "rollup": "^2.77.3",
     "rollup-plugin-coffee-script": "^2.0.0",
     "rollup-plugin-styles": "^4.0.0",
-    "rollup-plugin-terser": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-vue": "^6.0.0",
-    "rollup-plugin-vue2": "npm:rollup-plugin-vue@^5.0.0",
+    "rollup-plugin-vue2": "npm:rollup-plugin-vue@^5.1.9",
     "vue-template-compiler": "^2.7.8"
-  },
-  "peerDependencies": {
-    "vue": ">=2.6.10"
   },
   "postcss": {
     "plugins": {
@@ -72,6 +69,7 @@
     "types"
   ],
   "dependencies": {
-    "rematrix": "^0.7.2"
+    "rematrix": "^0.7.2",
+    "vue": "2.7.8"
   }
 }
